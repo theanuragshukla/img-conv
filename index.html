@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="/static/css/style.css">
+		<title></title>
+	</head>
+	<body>
+		<nav>
+			<p onclick="(()=>{
+			   location.href='/'
+			   })()"><span>Convert</span>ALL</p>
+	<!--		<button onclick="((req,res)=>{
+					location.href='mailto:www.anuragshukla@gmail.com'
+					})()" class="btn register">Contact Us</button>-->
+
+		</nav>
+		<div class="lower-navbar"></div>
+
+		<div class="main">
+
+			<div class="choose">
+				<label for="img">
+      <span >select file</span>
+			<input type="file" style="display:none" accept="image/*" id="img">
+</label>
+			</div>
+			<div class="format">
+				<select id="to" type="text" onChange="updateName()">
+				<option value="">convert to</option>
+				<option value="jpg">jpg</option>
+				<option value="png">png</option>
+				<option value="jpeg">jpeg</option>
+				<option value="webp">webp</option>
+			</select> 
+		<div id="fname"></div>
+			</div>
+			<div>
+
+		<button class="btn register" onclick="submit(this)">Convert</button>
+			</div>
+<div class="output">
+<button class="btn register" id="dlBtn">Download</button>
+</div>
+		</div>
+		<script src="/static/js/script.js"></script>
+	</body>
+</html>
